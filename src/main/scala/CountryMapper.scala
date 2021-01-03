@@ -16,12 +16,10 @@ class CountryMapper extends Mapper[LongWritable, Text, Text, IntWritable] {
 
     val line = value.toString
     val parsed = line.split(",", -1)
-    countryName.set(parsed(2)) //country name field
-    if (parsed(6) == "") confirmedCasesCount.set(0)
+    if (parsed(6).contains('_')) countryName.set(parsed(6).replace('_', ' '))
     else
-      confirmedCasesCount.set(
-        parsed(6).toInt
-      ) //cumulative confirmed cases field
+      countryName.set(parsed(6)) //country name field
+    confirmedCasesCount.set(parsed(4).toInt) //cumulative confirmed cases field
     context.write(countryName, confirmedCasesCount)
   }
 }
