@@ -37,7 +37,8 @@ Project was created with:
 
 > **Original Dataset Format** (619,000 records)  
 > `Date Reported` `Day` `Month` `Year` `Cases` `Deaths` `Countries and Territories`  
-> `GeoID` `Country Code` `2019 Population` `Continent` `# of cases per/100000` **MapReduced Data Result** (193 records)  
+> `GeoID` `Country Code` `2019 Population` `Continent` `# of cases per/100000`  
+**MapReduced Data Result** (193 records)  
 > `Countries and Territories` `Total Cumulative Cases`
 
 ## Todo List/ Features
