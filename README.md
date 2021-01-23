@@ -51,7 +51,7 @@ Project was created with:
 - [ ] Install Hive on docker
 - [ ] Run Hive queries on dataset
 
-## references:
+## References:
 
 [Dataset](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide)  
 [Big Data Europe's dockerized Hadoop cluster](https://github.com/big-data-europe/docker-hadoop)
